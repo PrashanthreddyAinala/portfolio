@@ -165,3 +165,11 @@ img{
     height: 20rem;
     max-width: 300px;
 }
+
+@media only screen and (max-width: 400px) {
+    .list-unbold {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+  }
