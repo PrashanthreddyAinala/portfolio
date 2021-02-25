@@ -90,6 +90,10 @@ img{
     list-style: none;
 }
 
+.footer-style #contact {
+    font-size: 1.5rem;
+}
+
 /* projectpage-style */
 .project-list {
     display: block;
