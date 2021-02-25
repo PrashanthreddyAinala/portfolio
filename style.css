@@ -166,7 +166,7 @@ img{
     max-width: 300px;
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .list-unbold {
         list-style: none;
         text-align: center;
