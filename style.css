@@ -1,175 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap");
 
 /* colors */
 :root {
-    --primary-color:  #EF4444;
-    --white-color: #F9FAFB;
-    --green-color: #10B981;
-    --blue-color:  #3B82F6;
-    --lightpink-color: #FCA5A5;
-    --lightgray-color: #F3F4F6;
+  --primary-color: #111827;
+  --white-color: #f9fafb;
+  --blue-color: #3b82f6;
+  --lightpink-color: #fca5a5;
+  --lightgray-color: #f3f4f6;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
+.main-page {
+  max-height: 100vh;
+  background-color: var(--primary-color);
+}
+h1 {
+  margin: 0.5rem;
+  color: var(--white-color);
+}
+
+/* typewritter */
+.typewriter h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  animation: typing 5.5s steps(40, end);
+  color: var(--white-color);
+  padding-bottom: 8.2rem;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /* nav bar */
 .nav-bar {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  color: var(--white-color);
 }
 
 /* list attributes */
 .list-unbold {
-    list-style: none;
-    text-align: right;
+  list-style: none;
+  text-align: right;
+  margin: 0.8rem;
 }
 
 .list-inline {
-    display: inline;
-    padding: 1rem;
-    font-size: 1.5rem;
+  display: inline;
+  padding: 1rem;
+  font-size: 1.3rem;
 }
 
 /* anchor tag */
 a {
-    text-decoration: none;
-    color: var(--white-color);
-}
-
-.link-active {
-    font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
 }
 
 /* image */
-img{
-    max-width: 300px;
-    margin: auto;
+img {
+  max-width: 300px;
+  padding: 5.6rem 0rem;
+  margin: auto;
 }
 
 .align-center {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 .align-center p {
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-.color {
-    color: var(--green-color);
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .anchor-style {
-    background-color: var(--blue-color);
-    padding: 0.7rem;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.gray-background {
-    background-color: #E5E7EB;
+  border: solid 2px;
+  color: var(--blue-color);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
 /* styling-footer */
 .footer-style {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    text-align: center;
-    border-top-right-radius: 1rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
 }
 
 .footer-style p {
-    font-size: 2rem;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .footer-style li {
-    list-style: none;
+  list-style: none;
 }
 
-.footer-style #contact {
-    font-size: 1.5rem;
+.footer-style ul {
+  padding: 0px;
 }
 
 /* projectpage-style */
+
+.project-page h1 {
+  color: black;
+  padding: 0rem;
+}
 .project-list {
-    display: block;
-    max-width: 600px;
-    margin: auto;
+  display: block;
+  max-width: 600px;
+  margin: auto;
 }
 
 .project-list li {
-    padding-top: 2rem;
-    list-style: none;
-    margin-bottom: 1rem;
+  padding-top: 1rem;
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
 .project-list p {
-    font-size: 2rem;
-    margin: 0px;
+  font-size: 1.5rem;
+  margin: 0px;
 }
 
 .secondary-link {
-    border: solid 2px;
-    border-color: var(--lightpink-color);
-    color: var(--lightpink-color);
-    border-radius: 0.5rem;
-    padding: 0.6rem;
-    font-size: 1.5rem;
+  border: solid 2px;
+  border-color: var(--lightpink-color);
+  color: var(--lightpink-color);
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  font-size: 1rem;
 }
 
 /* blog page */
 
-.blog-page {
-    padding: 2rem;
-    font-size: 2rem;
-    color: var(--green-color);
+.blog-page h1 {
+  text-align: center;
+  color: black;
+  padding-top: 1rem;
 }
-
 .blog {
-    display: block;
-    max-width: 500px;
-    margin: auto;
-    padding: 1rem;
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
 }
-.blog p{
-    font-size: 2rem;
+.blog p {
+  font-size: 1.3rem;
 }
 .blog a {
-    background-color: var(--blue-color);
-    padding: 0.7rem;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
+  border: solid 2px;
+  color: var(--blue-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
-/* sample page */
-.sample-page {
-    background-color: var(--lightgray-color);
-    padding: 2rem;
-    text-align: center;
-}
-.sample-page h1 {
-    font-size: 3rem;
-    color: var(--green-color);   
-}
+/* About page */
 
-.sample-page p {
-    font-size: 2rem;
+.about-page h1 {
+  text-align: center;
+  color: black;
+  padding-top: 1rem;
 }
-
-.sample-page img {
-    margin: auto;
-    height: 20rem;
-    max-width: 300px;
+.about-page p {
+  font-size: 1.5rem;
+  display: block;
+  max-width: 720px;
+  margin: auto;
+  padding-top: 1rem;
+}
+.space {
+  padding-bottom: 23.6rem;
 }
 
 @media (max-width: 400px) {
-    .list-unbold {
-        list-style: none;
-        text-align: center;
-        padding: 0px;
-    }
+  .list-unbold {
+    list-style: none;
+    text-align: right;
+    padding: 0px;
   }
+  .list-inline {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .nav-bar {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    color: var(--white-color);
+  }
+  .typewriter h2 {
+    padding-bottom: 0rem;
+  }
+  img {
+    max-width: 300px;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  /* projects page */
+  .project-page h1 {
+    font-size: 1.8rem;
+  }
+  .project-page h2 {
+    font-size: 1.3rem;
+  }
+  .project-list p {
+    font-size: 1.2rem;
+  }
+  /* blog page */
+  .blog-page h1 {
+    font-size: 1.8rem;
+  }
+  .blog-page h2 {
+    font-size: 1.3rem;
+    margin: 0rem;
+  }
+  .blog p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  /* about page */
+  .about-page {
+    padding: 1rem;
+  }
+  .space {
+    padding-bottom: 1rem;
+  }
+}
